@@ -1,18 +1,24 @@
 #include<stdio.h>
 int main(){
-	int num[1];
 	int n;
 	int i;
 	printf("nhap vao so phan tu cua mang: ");
-	scanf("%d",&num[n]);
-	for(i=0;i<n+1;i++){
-		printf("moi ban nhap vao so: ");
-		scanf("%d",&num[i]);
-		if(num[i]%2!=0){
-		scanf("%d",&num[i]);
-		}else if(num[i]%2==0){
-			printf("moi ban nhap lai\n");
+	scanf("%d",&n);
+	int num[n],i=0;
+
+	while(i<n){
+		arr[i]=2;
+		while(arr[i]%2==0){
+			printf("nhap vao so thu %d cua mang: ",i+1);
+			scanf("%d",&arr[i]);
 		}
-	}	
+		++i;
+	}
+	i=0;
+	while(i<n){
+		printf("arr[%d]=%d\n",i,arr[i]);
+		++i;
+	};
+	
 	return 0;
 }
